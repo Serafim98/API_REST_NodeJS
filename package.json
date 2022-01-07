@@ -1,0 +1,30 @@
+{
+  "name": "projetonodejsrest",
+  "version": "1.0.0",
+  "description": "Projeto com NodeJS construindo uma API REST",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serafim98/API_REST_NodeJS.git"
+  },
+  "author": "Luis Serafim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serafim98/API_REST_NodeJS/issues"
+  },
+  "homepage": "https://github.com/Serafim98/API_REST_NodeJS#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "consign": "^0.1.6",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
