@@ -5,6 +5,9 @@ class Atendimento{
     adiciona(atendimento, res){
         const dataCriacao = moment().format('YYYY-MM-DD HH:MM:SS');
         const data = moment(atendimento.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:MM:SS');
+
+        const dataValida = moment(data).isSameOrAfter(dataCriacao);
+        const clienteValido = atendimento.cliente.lenght >= 5;
         const atendimentoDatado = {...atendimento, dataCriacao, data}
         const sql = 'INSERT INTO Atendimentos SET ?';
 
